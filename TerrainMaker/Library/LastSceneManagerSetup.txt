@@ -1,4 +1,4 @@
 sceneSetups:
-- path: D:/Users/Oliver/Downloads/Procedural-Landmass-Generation-master/Proc Gen E05/Assets/Scenes/Scene.unity
+- path: Assets/Main.unity
   isLoaded: 1
   isActive: 1

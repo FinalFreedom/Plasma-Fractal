@@ -4,7 +4,7 @@ using System.Collections;
 public class MapGen : MonoBehaviour
 {
 
-    public enum DrawMode { NoiseMap, ColourMap, Mesh };
+    /**public enum DrawMode { NoiseMap, ColourMap, Mesh };
     public DrawMode drawMode;
 
     public int mapWidth;
@@ -76,7 +76,7 @@ public class MapGen : MonoBehaviour
         {
             octaves = 0;
         }
-    }
+    }**/
 }
 
 [System.Serializable]

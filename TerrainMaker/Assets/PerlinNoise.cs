@@ -10,8 +10,12 @@ public class PerlinNoise : MonoBehaviour {
     public int octaves = 4; //+ve
     public float persistance = 0.5f; // 0 to 1
     public float lacunarity = 2; //Greater than 1
-	// Use this for initialization
-	void Start () {
+    private float offsetX;
+    private float offsetY;
+    // Use this for initialization
+    void Start () {
+        float offsetX = Random.Range(-100, 100);
+        float offsetY = Random.Range(-100, 100);
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = MakeTerrain(terrain.terrainData);
 	}
@@ -25,8 +29,6 @@ public class PerlinNoise : MonoBehaviour {
     }
 	float[,] MakeHeights()
     {
-        float offsetX = Random.Range(-100, 100);
-        float offsetY = Random.Range(-100, 100);
         float max = float.MinValue;
         float min = float.MaxValue;
         float[,] heightmap = new float[width, height];
@@ -70,6 +72,6 @@ public class PerlinNoise : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        
+    }
 }
