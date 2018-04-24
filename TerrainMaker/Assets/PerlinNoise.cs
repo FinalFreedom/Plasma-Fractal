@@ -10,8 +10,8 @@ public class PerlinNoise : MonoBehaviour {
     public int octaves = 4; //+ve
     public float persistance = 0.5f; // 0 to 1
     public float lacunarity = 2; //Greater than 1
-    private float offsetX;
-    private float offsetY;
+    public float offsetX;
+    public float offsetY;
     // Use this for initialization
     void Start () {
         float offsetX = Random.Range(-100, 100);
@@ -72,6 +72,19 @@ public class PerlinNoise : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-        
+        Terrain terrain = GetComponent<Terrain>();
+        terrain.terrainData = MakeTerrain(terrain.terrainData);
+    }
+    void OnValidate()
+    {
+        if(octaves < 1)
+        {
+            octaves = 1;
+        }
+        Mathf.Clamp(persistance, 0, 1);
+        if(lacunarity <1)
+        {
+            lacunarity = 1;
+        }
     }
 }
