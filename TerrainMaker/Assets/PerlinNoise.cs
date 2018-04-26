@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PerlinNoise : MonoBehaviour {
-    public int depth = 0;
+    public float depth = 0;
     public int width = 256;
     public int height = 256;
-    public int scale = 20;
+    public float scale = 20;
     public int octaves = 4; //+ve
     public float persistance = 0.5f; // 0 to 1
     public float lacunarity = 2; //Greater than 1
@@ -14,13 +14,13 @@ public class PerlinNoise : MonoBehaviour {
     public float offsetY;
     // Use this for initialization
     void Start () {
-        float offsetX = Random.Range(-100, 100);
-        float offsetY = Random.Range(-100, 100);
+        float offsetX = (Random.value - 0.5f) * 100;
+        float offsetY = (Random.value - 0.5f) * 100;
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = MakeTerrain(terrain.terrainData);
 	}
 
-    TerrainData MakeTerrain(TerrainData data)
+    protected TerrainData MakeTerrain(TerrainData data)
     {
         data.heightmapResolution = width + 1;
         data.size = new Vector3(width, depth, height);
