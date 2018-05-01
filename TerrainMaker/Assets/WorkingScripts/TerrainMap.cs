@@ -19,6 +19,8 @@ public class TerrainMap : PerlinNoise {
         persistance = consistency; // 0 to 1
         lacunarity = roughness;
         setUp();
+        Terrain data = GetComponent<Terrain>();
+        
     }
 
     public override float pointModifier(int xCord, int yCord)
