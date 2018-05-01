@@ -80,12 +80,11 @@
   <ItemGroup>
     <Compile Include="Assets\FractalMaker\Plasma.cs" />
     <Compile Include="Assets\FractalMaker\TerrainMaker.cs" />
-    <Compile Include="Assets\MapDisplay.cs" />
-    <Compile Include="Assets\MapGen.cs" />
-    <Compile Include="Assets\Noise.cs" />
-    <Compile Include="Assets\PerlinNoise.cs" />
-    <Compile Include="Assets\TextureGenerator.cs" />
-    <Compile Include="Assets\WaterNoise.cs" />
+    <Compile Include="Assets\WorkingScripts\PerlinNoise.cs" />
+    <Compile Include="Assets\WorkingScripts\TerrainMap.cs" />
+    <Compile Include="Assets\WorkingScripts\TerrainPainter.cs" />
+    <Compile Include="Assets\WorkingScripts\TextureGenerator.cs" />
+    <Compile Include="Assets\WorkingScripts\WaterNoise.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

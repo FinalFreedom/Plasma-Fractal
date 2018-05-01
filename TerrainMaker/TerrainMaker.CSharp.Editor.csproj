@@ -121,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\GenEditor.cs" />
+    <Compile Include="Assets\Editor\MapDisplay.cs" />
+    <Compile Include="Assets\Editor\MapGen.cs" />
+    <Compile Include="Assets\Editor\Noise.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
