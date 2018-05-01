@@ -20,6 +20,7 @@ public class PerlinNoise : MonoBehaviour {
 	}
     protected void setUp()
     {
+        offsetX = Random.Range(-10000, 100000);
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = MakeTerrain(terrain.terrainData);
         MakeGradientMap(terrainHeights);
@@ -43,7 +44,7 @@ public class PerlinNoise : MonoBehaviour {
             {
                 float amplitude = 1;
                 float frequency = 1;
-                float noiseHeight = 0;
+                float noiseHeight = pointModifier(x,y);
                 for(int i = 0; i<octaves; i++)
                 {
                     float xCord = ((float)x / width) * scale * frequency;
@@ -53,6 +54,7 @@ public class PerlinNoise : MonoBehaviour {
                     amplitude *= persistance;
                     frequency *= lacunarity;
                 }
+                //noiseHeight += pointModifier(x, y);
                 if(noiseHeight<min)
                 {
                     min = noiseHeight;
@@ -62,6 +64,9 @@ public class PerlinNoise : MonoBehaviour {
                     max = noiseHeight;
                 }
                 heightmap[x, y] = noiseHeight;
+                //This would have created a square insert in which I would be able to add
+                //the first semester project and extend the noisemap to produce tiles for the
+                //game
                 /**if (x > (width / 2) - 25 & x < (width / 2) + 25)
                 {
                     if (y > (height / 2) - 25 & y < (height / 2) + 25)
@@ -71,7 +76,8 @@ public class PerlinNoise : MonoBehaviour {
                 }**/
             }
         }
-        for(int x = 0; x<width;x++)
+        //Debug.Log(min.ToString() + " + " + max.ToString()); -1.3 -> 1
+        for (int x = 0; x<width;x++)
         {
             for(int y = 0; y<height;y++)
             {
@@ -212,8 +218,12 @@ public class PerlinNoise : MonoBehaviour {
         return terrainHeights;
         
     }
-	// Update is called once per frame
-	void Update () {
+    public virtual float pointModifier(int xCord, int yCord)
+    {
+        return 0f;
+    }
+    // Update is called once per frame
+    void Update () {
         //Terrain terrain = GetComponent<Terrain>();
         //terrain.terrainData = MakeTerrain(terrain.terrainData);
     }

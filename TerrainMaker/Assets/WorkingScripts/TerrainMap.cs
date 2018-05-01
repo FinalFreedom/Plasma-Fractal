@@ -14,6 +14,17 @@ public class TerrainMap : PerlinNoise {
         lacunarity = 4;
         setUp();
     }
+
+    public override float pointModifier(int xCord, int yCord)
+    {
+        //float x = (xCord/width) - 0.5f;
+        //float y = (yCord/height)- 0.5f;
+
+        //
+        float x = (Mathf.InverseLerp(0, width, xCord)-0.5f);
+        float y = (Mathf.InverseLerp(0, height, yCord)-0.5f);
+        return -Mathf.Pow(x*3,2) - Mathf.Pow(y*3, 2);
+    }
 	public void updateVectors(float xPos, float yPos)
     {
         offsetX += xPos;
