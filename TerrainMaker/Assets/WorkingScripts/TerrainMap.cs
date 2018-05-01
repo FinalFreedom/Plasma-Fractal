@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 public class TerrainMap : PerlinNoise {
     public TerrainColour[] colours;
+    public float deep = 56;
+    public int[] area = { 256, 256 };
+    public float zoom = 4;
+    public int recursions = 4;
+    public float consistency = 0.25f;
+    public float roughness = 4f;
     // Use this for initialization
     void Start () {
-        depth = 56;
-        width = 256;
-        height = 256;
-        scale = 4;
-        octaves = 4; //+ve
-        persistance = 0.25f; // 0 to 1
-        lacunarity = 4;
+        depth = deep;
+        width = area[0];
+        height = area[1];
+        scale = zoom;
+        octaves = recursions; //+ve
+        persistance = consistency; // 0 to 1
+        lacunarity = roughness;
         setUp();
     }
 
