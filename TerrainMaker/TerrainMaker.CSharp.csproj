@@ -80,7 +80,9 @@
   <ItemGroup>
     <Compile Include="Assets\FractalMaker\Plasma.cs" />
     <Compile Include="Assets\FractalMaker\TerrainMaker.cs" />
+    <Compile Include="Assets\WorkingScripts\CameraFrame.cs" />
     <Compile Include="Assets\WorkingScripts\PerlinNoise.cs" />
+    <Compile Include="Assets\WorkingScripts\PlayerMovement.cs" />
     <Compile Include="Assets\WorkingScripts\TerrainMap.cs" />
     <Compile Include="Assets\WorkingScripts\TerrainPainter.cs" />
     <Compile Include="Assets\WorkingScripts\TextureGenerator.cs" />
