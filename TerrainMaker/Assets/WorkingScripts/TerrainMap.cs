@@ -22,7 +22,10 @@ public class TerrainMap : PerlinNoise {
         Terrain data = GetComponent<Terrain>();
         
     }
-
+    public void reMake()
+    {
+        setUp();
+    }
     public override float pointModifier(int xCord, int yCord)
     {
         //float x = (xCord/width) - 0.5f;
