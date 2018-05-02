@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour {
 
         // Update is called once per frame
         void FixedUpdate() {
-        
         float velH = Input.GetAxis("Horizontal");
         float velV = Input.GetAxis("Vertical");
         //cameraArm =  ((transform.up)*1.5f) - ((transform.forward) * 3);
