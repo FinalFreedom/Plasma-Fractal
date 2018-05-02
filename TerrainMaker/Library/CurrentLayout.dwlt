@@ -368,9 +368,9 @@ MonoBehaviour:
     height: 636
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e2c0000
-    m_LastClickedID: 11294
-    m_ExpandedIDs: e4fbffff000000000c2c0000
+    m_SelectedIDs: 36010000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -425,9 +425,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 42.725956, y: -12.38474, z: -22.10965}
+    m_Target: {x: -0.58371353, y: 15.100822, z: -38.987427}
     speed: 2
-    m_Value: {x: 42.725956, y: -12.38474, z: -22.10965}
+    m_Value: {x: -0.58371353, y: 15.100822, z: -38.987427}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -452,11 +452,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.008484358, y: 0.9730261, z: -0.22767043, w: 0.036256194}
     speed: 2
-    m_Value: {x: 0.008484358, y: 0.9730261, z: -0.22767043, w: 0.036256194}
+    m_Value: {x: 0.008484358, y: 0.97302604, z: -0.22767043, w: 0.036256194}
   m_Size:
-    m_Target: 127.958206
+    m_Target: 258.7788
     speed: 2
-    m_Value: 127.958206
+    m_Value: 258.7788
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -577,19 +577,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Materials
+    - Assets/WorkingScripts
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Materials
+  - Assets/WorkingScripts
   m_LastFoldersGridSize: 60
   m_LastProjectPath: D:\Users\Oliver\Documents\GitHub\Plasma Fractal\TerrainMaker
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 582b0000
-    m_LastClickedID: 11096
-    m_ExpandedIDs: 00000000b8240000ac260000582b0000a62c000000ca9a3bffffff7f
+    m_SelectedIDs: 48250000
+    m_LastClickedID: 9544
+    m_ExpandedIDs: 00000000b8240000ae2600005a2b0000aa2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,7 +617,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8240000ac260000a62c0000
+    m_ExpandedIDs: 00000000b8240000ae2600005a2b0000aa2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

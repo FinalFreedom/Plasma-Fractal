@@ -22,8 +22,9 @@ public class PlayerMovement : MonoBehaviour {
         void FixedUpdate() {
         float velH = Input.GetAxis("Horizontal");
         float velV = Input.GetAxis("Vertical");
+        float velZ = Input.GetAxis("Jump");
         //cameraArm =  ((transform.up)*1.5f) - ((transform.forward) * 3);
-        Vector3 movement = new Vector3(velH,0f,velV);
+        Vector3 movement = new Vector3(velH,velZ,velV);
         transform.Rotate(transform.up, velH);
         rb.AddForce(movement*10);
         //playerView.transform.position = transform.position + cameraArm;
